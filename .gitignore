@@ -1,0 +1,71 @@
+# Dependencies / local runtime
+app/node_modules/
+node_modules/
+runtime/
+fast-tools-backup/
+
+# Local DevSpace state and credentials
+.devspace/
+**/.devspace/
+auth.json
+**/auth.json
+config.jsonc
+**/config.jsonc
+*.token
+*.secret
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Cloudflare / tunnel credentials
+.cloudflare/
+.cloudflared/
+cert.pem
+credentials.json
+*-credentials.json
+cloudflared*.json
+
+# Keys / certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+# Logs / databases / caches
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+.cache/
+tmp/
+temp/
+__pycache__/
+*.pyc
+
+# Test / benchmark / scratch files
+bench_*
+scan_repo.py
+grep_paths.py
+fast_tools_selftest.py
+fast_patch*.py
+fast_fix.py
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build / package artifacts
+dist/
+coverage/
+*.tgz
+*.zip
+
+# Keep distributable patch files
+!patches/
+!patches/**

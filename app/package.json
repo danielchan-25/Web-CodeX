@@ -1,0 +1,10 @@
+{
+  "name": "web-codex-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runtime dependencies for Web-CodeX based on DevSpace",
+  "dependencies": {
+    "@waishnav/devspace": "1.1.0-beta.4",
+    "drizzle-orm": "0.45.2"
+  }
+}
