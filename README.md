@@ -1,10 +1,10 @@
-# Web-CodeX
+# DevSpace（Fast Tools 增强版）
 
 基于 [DevSpace](https://github.com/Waishnav/devspace) 的 MCP 性能增强方案，目标是在保留 DevSpace OAuth、Workspace、安全边界和完整 Coding 能力的前提下，显著减少 ChatGPT 与本地电脑之间的 MCP Tool Call 次数。
 
 本项目主要解决一个实际问题：DevSpace 在复杂开发任务中非常完整，但一些简单操作通常需要先 `open_workspace`，再执行读取、搜索、Git 或修改工具。通过公网 MCP 使用时，每多一次 Tool Call 都可能增加数百毫秒到数秒的网络往返和模型二次规划时间。
 
-Web-CodeX 为高频操作增加了一组“一次调用完成”的 Fast Tools，并保留原版 DevSpace 作为复杂任务的后备能力。
+本项目为高频操作增加了一组“一次调用完成”的 Fast Tools，并保留原版 DevSpace 作为复杂任务的后备能力。
 
 ## 架构
 
@@ -42,7 +42,7 @@ open_workspace
 → show_changes
 ```
 
-Web-CodeX 会优先走：
+本项目会优先走：
 
 ```text
 project_snapshot_fast
